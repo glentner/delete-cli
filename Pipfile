@@ -15,7 +15,7 @@ twine = "*"
 [packages]
 cmdkit = ">=1.2.1"
 logalpha = ">=2.0.2"
-e1839a8 = {editable = true,path = "."}
+delete-cli = {editable = true,path = "."}
 
 [requires]
 python_version = "3.7"

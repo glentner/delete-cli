@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "aa1473fd1a5be618cd190e000cd10baa280a1b0d5c6349320248bd01eece3ec1"
+            "sha256": "bb15df5a2a84edf8c519d0c1bcc322cbe0f69876558b44b5e6d3db11c69af403"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -24,7 +24,7 @@
             "index": "pypi",
             "version": "==1.2.1"
         },
-        "e1839a8": {
+        "delete-cli": {
             "editable": true,
             "path": "."
         },
@@ -176,10 +176,10 @@
         },
         "jinja2": {
             "hashes": [
-                "sha256:74320bb91f31270f9551d46522e33af46a80c3d619f4a4bf42b3164d30b5911f",
-                "sha256:9fe95f19286cfefaa917656583d020be14e7859c6b0252588391e47db34527de"
+                "sha256:6e7a3c2934694d59ad334c93dd1b6c96699cf24c53fdb8ec848ac6b23e685734",
+                "sha256:d6609ae5ec3d56212ca7d802eda654eaf2310000816ce815361041465b108be4"
             ],
-            "version": "==2.10.3"
+            "version": "==2.11.0"
         },
         "keyring": {
             "hashes": [
