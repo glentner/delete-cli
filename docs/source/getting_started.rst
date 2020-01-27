@@ -6,7 +6,7 @@ Installation
 
 If you already have Python on your system, you can install ``delete`` using Pip.
 
-.. code-block::
+.. code-block:: bash
 
     pip install delete-cli
 
