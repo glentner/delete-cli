@@ -4,14 +4,11 @@ Getting Started
 Installation
 ------------
 
-Installation is strait forward. If you already have Python on your system, you can
-install ``delete`` using Pip.
+If you already have Python on your system, you can install ``delete`` using Pip.
 
-.. code-block::
+.. code-block:: bash
 
     pip install delete-cli
-
-For alternate installation methods see the `installation`_ page.
 
 
 Basic Usage
