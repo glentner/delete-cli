@@ -44,8 +44,8 @@ setup(
                         'Operating System :: Microsoft :: Windows',
                         'License :: OSI Approved :: Apache Software License', ],
     entry_points     = {'console_scripts': ['delete=delete:main', ]},
-    install_requires = ['cmdkit>=1.2.1', 'logalpha>=2.0.2'],
+    install_requires = ['cmdkit>=1.2.1', 'logalpha>=2.0.2', ],
     extras_require       = {
         'dev': ['ipython', 'pytest', 'hypothesis', 'pylint', 'sphinx',
-                'sphinx-rtd-theme']},
+                'sphinx-rtd-theme', 'twine', ]},
 )
