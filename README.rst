@@ -15,6 +15,10 @@ A simple command line move-to-trash.
     :target: https://pypi.org/project/delete-cli
     :alt: Python Versions
 
+.. image:: https://readthedocs.org/projects/delete-cli/badge/?version=latest&style=flat
+    :target: https://delete-cli.readthedocs.io
+    :alt: Documentation
+
 
 Installation
 ------------
