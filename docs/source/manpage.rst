@@ -15,11 +15,11 @@ Description
 
 The ``delete`` command is a simple alternative to using the standard ``rm`` command.
 Using ``rm`` as a matter of course can be dangerous and prone to mistakes. Once a file is
-unlinked with ``rm`` it cannot be saved (without having backups).
+unlinked with ``rm`` it cannot be recovered (without having backups).
 
-All graphical file managers provided by operating systems offer a "move to trash" option.
-This does a clean move operation to a "trash" folder. Once a file as been put in the
-trash it can be recovered easily. Periodically, the trash can be emptied if desired.
+All major graphical environments offer a "move to trash" option. This does a clean move
+operation to a "trash" folder. Once a file as been put in the trash it can be recovered
+easily. Periodically, the trash can be emptied if desired.
 
 ``delete`` is a command line implementation of this metaphor. It maintains a basic
 ``sqlite3`` database of files and folders put in the trash. Using the ``--list`` option
@@ -81,6 +81,9 @@ Deleting files and folders is as simple as:
 .. code-block:: bash
 
     delete file1.txt file2.txt folderA
+
+Files or folders that get deleted with the same basename will have a suffix added before
+the extension (e.g., ``file1.1.txt``, ``file1.2.txt``, ...).
 
 Restore files using their basename (in the trash), their full path (in the trash) or
 their original full path.
