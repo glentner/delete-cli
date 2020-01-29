@@ -47,3 +47,8 @@ class Handler(_handlers.Handler):
 
 log = Logger()
 log.handlers.append(Handler())
+
+# inject logger back into cmdkit
+from cmdkit import logging as _cmd_logging, app as _cmd_app
+_cmd_logging.log = log
+_cmd_app.Application.log_error = log.error
