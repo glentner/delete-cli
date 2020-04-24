@@ -1,6 +1,6 @@
 .\" Man page generated from reStructuredText.
 .
-.TH "DELETE" "1" "Jan 29, 2020" "" "delete"
+.TH "DELETE" "1" "Apr 24, 2020" "1.1.1" "delete"
 .SH NAME
 delete \- command line move-to-trash
 .
@@ -32,10 +32,10 @@ level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
 ..
 .SH SYNOPSIS
 .nf
-delete \fIPATH\fP [\fIPATH\fP ...]
-delete \-\-restore \fIPATH\fP [\fIPATH\fP ...]
-delete \-\-empty
-delete \-\-list
+delete \fIPATH\fP [\fIPATH\fP …]
+delete –restore \fIPATH\fP [\fIPATH\fP …]
+delete –empty
+delete –list
 .fi
 .sp
 .SH DESCRIPTION
@@ -44,8 +44,8 @@ The \fBdelete\fP command is a simple alternative to using the standard \fBrm\fP 
 Using \fBrm\fP as a matter of course can be dangerous and prone to mistakes. Once a file is
 unlinked with \fBrm\fP it cannot be recovered (without having backups).
 .sp
-All major graphical environments offer a "move to trash" option. This does a clean move
-operation to a "trash" folder. Once a file as been put in the trash it can be recovered
+All major graphical environments offer a “move to trash” option. This does a clean move
+operation to a “trash” folder. Once a file as been put in the trash it can be recovered
 easily. Periodically, the trash can be emptied if desired.
 .sp
 \fBdelete\fP is a command line implementation of this metaphor. It maintains a basic
@@ -127,7 +127,7 @@ delete file1.txt file2.txt folderA
 .UNINDENT
 .sp
 Files or folders that get deleted with the same basename will have a suffix added before
-the extension (e.g., \fBfile1.1.txt\fP, \fBfile1.2.txt\fP, ...).
+the extension (e.g., \fBfile1.1.txt\fP, \fBfile1.2.txt\fP, …).
 .sp
 Restore files using their basename (in the trash), their full path (in the trash) or
 their original full path.
@@ -171,7 +171,7 @@ delete \-\-empty
 .UNINDENT
 .SH RECOMMENDATIONS
 .sp
-Add the following to your shell\(aqs login profile to shorten the invocation.
+Add the following to your shell’s login profile to shorten the invocation.
 .INDENT 0.0
 .INDENT 3.5
 .sp
