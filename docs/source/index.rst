@@ -1,5 +1,34 @@
-delete - a command line move-to-trash
-=====================================
+Delete
+======
+
+*A simple, cross-platform, command line move-to-trash.*
+
+.. image:: https://img.shields.io/badge/license-Apache-blue.svg?style=flat
+    :target: https://www.apache.org/licenses/LICENSE-2.0
+    :alt: License
+
+.. image:: https://img.shields.io/pypi/v/delete-cli.svg
+    :target: https://pypi.org/project/delete-cli
+    :alt: PyPI Version
+
+.. image:: https://img.shields.io/pypi/pyversions/delete-cli.svg?logo=python&logoColor=white&style=flat
+    :target: https://pypi.org/project/delete-cli
+    :alt: Python Versions
+
+.. image:: https://readthedocs.org/projects/delete-cli/badge/?version=latest&style=flat
+    :target: https://delete-cli.readthedocs.io
+    :alt: Documentation
+
+.. image:: https://pepy.tech/badge/delete-cli
+    :target: https://pepy.tech/badge/delete-cli
+    :alt: Downloads
+
+Release v\ |release|. (:ref:`Installation <install>`)
+
+-------------------
+
+But why?
+--------
 
 The ``delete`` command is a simple alternative to using the standard ``rm`` command.
 Using ``rm`` as a matter of course can be dangerous and prone to mistakes. Once a file is
@@ -14,6 +43,7 @@ easily. Periodically, the trash can be emptied if desired.
 will list the contents. Using ``--restore`` will restore a file or folder from the trash.
 Using ``--empty`` will purge anything put in the trash by ``delete``.
 
+-------------------
 
 .. toctree::
     :maxdepth: 2
