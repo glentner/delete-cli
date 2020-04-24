@@ -44,7 +44,7 @@ setup(
                             'Operating System :: MacOS',
                             'Operating System :: Microsoft :: Windows',
                             'License :: OSI Approved :: Apache Software License', ],
-    entry_points         = {'console_scripts': ['delete=delete:main', ]},
+    entry_points         = {'console_scripts': ['delete=delete.cli:main', ]},
     install_requires     = ['cmdkit>=1.2.1', 'logalpha>=2.0.2', ],
     extras_require       = {
         'dev': ['ipython', 'pytest', 'hypothesis', 'pylint', 'sphinx',
