@@ -24,8 +24,6 @@ Delete
     :alt: Downloads
 
 
--------------------
-
 But why?
 --------
 
@@ -42,7 +40,6 @@ easily. Periodically, the trash can be emptied if desired.
 will list the contents. Using ``--restore`` will restore a file or folder from the trash.
 Using ``--empty`` will purge anything put in the trash by ``delete``.
 
--------------------
 
 Installation
 ------------
