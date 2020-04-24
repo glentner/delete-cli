@@ -11,7 +11,7 @@
 """Metadata for delete-cli."""
 
 __appname__     = 'delete-cli'
-__version__     = '1.1.1'
+__version__     = '1.1.2'
 __authors__     = 'Geoffrey Lentner'
 __contact__     = 'glentner@purdue.edu'
 __license__     = 'Apache Software License (v2.0)'
