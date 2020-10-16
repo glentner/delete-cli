@@ -10,6 +10,11 @@
 
 """delete-cli package initialization and metadata."""
 
+<<<<<<< HEAD
 # metadata
 from delete.__meta__ import (__appname__, __version__, __authors__, __contact__,
                              __license__, __website__, __keywords__, __description__)
+=======
+
+from .__meta__ import __version__, __license__
+>>>>>>> release/1.1.4
