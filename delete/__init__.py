@@ -9,3 +9,6 @@
 # If not, see <https://www.apache.org/licenses/LICENSE-2.0>.
 
 """delete-cli package initialization and metadata."""
+
+
+from .__meta__ import __version__, __license__
