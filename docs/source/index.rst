@@ -1,7 +1,7 @@
 Delete
 ======
 
-*A simple, cross-platform, command line move-to-trash.*
+*A simple, cross-platform, command-line move-to-trash.*
 
 .. image:: https://img.shields.io/badge/license-Apache-blue.svg?style=flat
     :target: https://www.apache.org/licenses/LICENSE-2.0

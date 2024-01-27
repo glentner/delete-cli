@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "delete-cli"
 version = "2.0.0"
-description = "Simple command-line move-to-trash"
+description = "A simple, cross-platform, command-line move-to-trash."
 readme = "README.rst"
 license = "MIT"
 homepage = "https://delete-cli.readthedocs.io"
