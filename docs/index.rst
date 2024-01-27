@@ -3,19 +3,19 @@ Delete
 
 *A simple, cross-platform, command-line move-to-trash.*
 
-.. image:: https://img.shields.io/badge/license-Apache-blue.svg?style=flat
-    :target: https://www.apache.org/licenses/LICENSE-2.0
+.. image:: https://img.shields.io/badge/License-MIT-yellow.svg
+    :target: https://opensource.org/licenses/MIT
     :alt: License
 
 .. image:: https://img.shields.io/pypi/v/delete-cli.svg
     :target: https://pypi.org/project/delete-cli
     :alt: PyPI Version
 
-.. image:: https://img.shields.io/pypi/pyversions/delete-cli.svg?logo=python&logoColor=white&style=flat
+.. image:: https://img.shields.io/pypi/pyversions/delete-cli.svg?logoColor=white
     :target: https://pypi.org/project/delete-cli
     :alt: Python Versions
 
-.. image:: https://readthedocs.org/projects/delete-cli/badge/?version=latest&style=flat
+.. image:: https://readthedocs.org/projects/delete-cli/badge/?version=latest&color=green
     :target: https://delete-cli.readthedocs.io
     :alt: Documentation
 
