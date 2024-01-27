@@ -4,8 +4,8 @@ Manual Page for Delete
 Synopsis
 --------
 
-| del [-hv] PATH [PATH...]
-| del --restore PATH [PATH...]
+| del [-hv] PATH [PATH ...]
+| del --restore PATH [PATH ...]
 | del --list
 | del --empty
 

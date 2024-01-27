@@ -31,8 +31,8 @@ __version__ = importlib.metadata.version('delete-cli')
 
 USAGE = f"""\
 Usage:
-  {__appname__} [-hv] PATH [PATH...]
-  {__appname__} --restore PATH [PATH...]
+  {__appname__} [-hv] PATH [PATH ...]
+  {__appname__} --restore PATH [PATH ...]
   {__appname__} --list
   {__appname__} --empty
   
