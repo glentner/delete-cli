@@ -4,10 +4,10 @@ Manual Page for Delete
 Synopsis
 --------
 
-| delete *PATH* [*PATH* ...]
-| delete --restore *PATH* [*PATH* ...]
-| delete --empty
-| delete --list
+| del [-hv] PATH [PATH...]
+| del --restore PATH [PATH...]
+| del --list
+| del --empty
 
 
 Description
