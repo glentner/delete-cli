@@ -44,7 +44,7 @@ Using ``--empty`` will purge anything put in the trash by ``del``.
 Installation
 ------------
 
-If you already have Python 3.7 on your system, you can install ``del`` using Pip.
+If you already have Python 3.12+ on your system, you can install ``del`` using Pip.
 
 .. code-block:: bash
 
@@ -62,7 +62,7 @@ Deleting files and folders is as simple as:
 
 .. code-block:: bash
 
-    delete file1.txt file2.txt folderA
+    del file1.txt file2.txt folderA
 
 Files or folders that get deleted with the same basename will have a suffix added before
 the extension (e.g., ``file1.1.txt``, ``file1.2.txt``, ...).
