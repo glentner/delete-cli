@@ -1,7 +1,7 @@
 Configuration
 =============
 
-``delete`` has no real configuration other than where on the system to keep the trash
+``del`` has no real configuration other than where on the system to keep the trash
 folder and its database, both of which are controlled by the below environment variables.
 
 
@@ -14,7 +14,7 @@ Environment Variables
 By default, the program will move objects to the ``~/.Trash`` folder. This is for
 consistency with systems like macOS and most Linux distributions. In this way, the
 *empty trash* operation on these systems will also remove anything put there by the
-``delete`` program via the command line. You can specify a different location via the
+``del`` program via the command-line. You can specify a different location via the
 ``TRASH_FOLDER`` environment variable. For example, in your ``~/.bashrc``.
 
 .. code-block:: bash
