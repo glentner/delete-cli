@@ -4,16 +4,16 @@ Manual Page for Delete
 Synopsis
 --------
 
-| delete *PATH* [*PATH* ...]
-| delete --restore *PATH* [*PATH* ...]
-| delete --empty
-| delete --list
+| del [-hv] PATH [PATH ...]
+| del --restore PATH [PATH ...]
+| del --list
+| del --empty
 
 
 Description
 -----------
 
-The ``delete`` command is a simple alternative to using the standard ``rm`` command.
+The ``del`` command is a simple alternative to using the standard ``rm`` command.
 Using ``rm`` as a matter of course can be dangerous and prone to mistakes. Once a file is
 unlinked with ``rm`` it cannot be recovered (without having backups).
 
@@ -21,10 +21,10 @@ All major graphical environments offer a "move to trash" option. This does a cle
 operation to a "trash" folder. Once a file as been put in the trash it can be recovered
 easily. Periodically, the trash can be emptied if desired.
 
-``delete`` is a command line implementation of this metaphor. It maintains a basic
+``del`` is a command-line implementation of this metaphor. It maintains a basic
 ``sqlite3`` database of files and folders put in the trash. Using the ``--list`` option
 will list the contents. Using ``--restore`` will restore a file or folder from the trash.
-Using ``--empty`` will purge anything put in the trash by ``delete``.
+Using ``--empty`` will purge anything put in the trash by ``del``.
 
 
 Usage
@@ -54,7 +54,7 @@ Environment Variables
     By default, the program will move objects to the ``~/.Trash`` folder. This is for
     consistency with systems like macOS and most Linux distributions. In this way, the
     *empty trash* operation on these systems will also remove anything put there by the
-    ``delete`` program via the command line. You can specify a different location via
+    ``del`` program via the command line. You can specify a different location via
     the ``TRASH_FOLDER`` environment variable. For example, in your ``~/.bashrc``.
 
     .. code-block:: bash
@@ -80,7 +80,7 @@ Deleting files and folders is as simple as:
 
 .. code-block:: bash
 
-    delete file1.txt file2.txt folderA
+    del file1.txt file2.txt folderA
 
 Files or folders that get deleted with the same basename will have a suffix added before
 the extension (e.g., ``file1.1.txt``, ``file1.2.txt``, ...).
@@ -90,15 +90,15 @@ their original full path.
 
 .. code-block:: bash
 
-    delete --restore file1.txt
-    delete --restore $TRASH_FOLDER/file2.txt
-    delete --restore /original/path/folderA
+    del --restore file1.txt
+    del --restore $TRASH_FOLDER/file2.txt
+    del --restore /original/path/folderA
 
 List the contents of the trash along with their original full paths.
 
 .. code-block:: bash
 
-    delete --list
+    del --list
 
 Use ``--empty`` to completely empty the trash. This does not remove the
 ``$TRASH_FOLDER``. It iterates through the full listing of contents from the
@@ -106,17 +106,7 @@ Use ``--empty`` to completely empty the trash. This does not remove the
 
 .. code-block:: bash
 
-    delete --empty
-
-
-Recommendations
----------------
-
-Add the following to your shell's login profile to shorten the invocation.
-
-.. code-block:: bash
-
-    alias del="delete"
+    del --empty
 
 
 See Also
@@ -129,5 +119,5 @@ Bugs
 ----
 
 * On *macOS* systems the default ``~/.Trash`` is protected and does not allow a listing
-  of the directory. ``delete`` functions normally aside from an error message being printed
+  of the directory. ``del`` functions normally aside from an error message being printed
   when using ``--empty``.
