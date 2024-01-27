@@ -43,7 +43,6 @@ extensions = [
     'sphinxext.opengraph',
     'sphinx_sitemap',
     'sphinx_copybutton',
-    'sphinxcontrib.details.directive',
 ]
 
 # do not include fully qualified names of objects with autodoc

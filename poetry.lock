@@ -1190,23 +1190,6 @@ standalone = ["Sphinx (>=5)"]
 test = ["pytest"]
 
 [[package]]
-name = "sphinxcontrib-details-directive"
-version = "0.1.0"
-description = "\"details\" directive for Sphinx"
-optional = false
-python-versions = "*"
-files = [
-    {file = "sphinxcontrib-details-directive-0.1.0.tar.gz", hash = "sha256:78bd6a67f786a21868abf0e6a5973340d7e7a6fd71b1890de9c856f92877b38b"},
-    {file = "sphinxcontrib_details_directive-0.1.0-py2.py3-none-any.whl", hash = "sha256:ed4d4f47b36e3e905601d425945cbe9d50d4cbcf9964bbf9c863d5a983fb7bf6"},
-]
-
-[package.dependencies]
-Sphinx = ">=2.0"
-
-[package.extras]
-test = ["flake8", "flake8-import-order", "mypy", "pytest", "tox"]
-
-[[package]]
 name = "sphinxcontrib-devhelp"
 version = "1.0.6"
 description = "sphinxcontrib-devhelp is a sphinx extension which outputs Devhelp documents"
@@ -1429,4 +1412,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.12,<4.0"
-content-hash = "a9d79c904442a84214f839a38360f78195f3ac217771379081693ef37b54afe5"
+content-hash = "305aa9d4850ae3cb254516eb05cce1800e5acda98b57a5742683d4d01965da83"

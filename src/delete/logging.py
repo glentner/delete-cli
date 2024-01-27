@@ -6,14 +6,17 @@
 
 # Type annotations
 from __future__ import annotations
+from typing import Dict, Final
 
 # Standard libs
-from enum import Enum
 import logging
 
+# External libs
+from cmdkit.ansi import Ansi
 
-OK = logging.INFO
-ERR = logging.ERROR
+
+OK: Final[int] = logging.INFO
+ERR: Final[int] = logging.ERROR
 logging.addLevelName(OK, 'OK')
 logging.addLevelName(ERR, 'ERR')
 
@@ -33,17 +36,9 @@ class Logger(logging.Logger):
             self._log(ERR, msg, args, **kwargs)
 
 
-class Ansi(Enum):
-    """ANSI escape sequences."""
-    
-    RESET = '\033[0m'
-    RED = '\033[31m'
-    GREEN = '\033[32m'
-
-
-COLOR_BY_LEVEL = {
+COLOR_BY_LEVEL: Final[Dict[str, Ansi]] = {
     'OK': Ansi.GREEN,
-    'ERR': Ansi.RED
+    'ERR': Ansi.RED,
 }
 
 
@@ -53,8 +48,11 @@ class LogRecord(logging.LogRecord):
 
     def __init__(self, *args, **kwargs) -> None:
         super().__init__(*args, **kwargs)
-        self.ansi_color = COLOR_BY_LEVEL[self.levelname].value
         self.ansi_reset = Ansi.RESET.value
+        if self.levelname in COLOR_BY_LEVEL:
+            self.ansi_color = COLOR_BY_LEVEL[self.levelname].value
+        else:
+            self.ansi_color = ''
 
 
 handler = logging.StreamHandler()
